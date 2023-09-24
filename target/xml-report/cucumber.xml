@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="119.284" tests="18" skipped="0" failures="3" errors="0">
-<testcase classname="Kullanici Icerik Yukleyebilmeli" name="Kullanici_Icerik_Yukleyebilmeli" time="9.068">
+<testsuite name="Cucumber" time="151.368" tests="18" skipped="0" failures="3" errors="0">
+<testcase classname="Kullanici Icerik Yukleyebilmeli" name="Kullanici_Icerik_Yukleyebilmeli" time="9.985">
 <system-out><![CDATA[
 Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
 And Kullanici Login Olur ve Login oldugunu dogrular.........................passed
@@ -11,7 +11,7 @@ When Kullanici Icerik Yuklendi mesajini dogrular............................pass
 And Close Driver............................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Kullanici Login Olabilmelidir" name="Kullanici_Login_Olabilmelidir" time="4.176">
+<testcase classname="Kullanici Login Olabilmelidir" name="Kullanici_Login_Olabilmelidir" time="4.623">
 <system-out><![CDATA[
 Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
 When Kullanici Kayitli Email Adresini Girer.................................passed
@@ -21,7 +21,7 @@ And Kullanici Anasayfada Oldugunu Dogrular..................................pass
 And Close Driver............................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Kullanici Login Olamamalidir" name="Kullanici_Login_Olamamalidir" time="3.804">
+<testcase classname="Kullanici Login Olamamalidir" name="Kullanici_Login_Olamamalidir" time="3.969">
 <system-out><![CDATA[
 Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
 When Kullanici Email alanini bos birakir....................................passed
@@ -31,7 +31,7 @@ And Kullanici Hata Aldigini dogrular........................................pass
 And Close Driver............................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Kullanici Login Olamamalidir" name="Kullanici_Login_Olamamalidir" time="4.11">
+<testcase classname="Kullanici Login Olamamalidir" name="Kullanici_Login_Olamamalidir" time="4.046">
 <system-out><![CDATA[
 Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
 When Kullanici @ simgesi kullanmadan Email girer............................passed
@@ -41,7 +41,7 @@ And Kullanici Hata Aldigini dogrular........................................pass
 And Close Driver............................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Kullanici Login Olamamalidir" name="Kullanici_Login_Olamamalidir" time="4.084">
+<testcase classname="Kullanici Login Olamamalidir" name="Kullanici_Login_Olamamalidir" time="4.053">
 <system-out><![CDATA[
 Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
 When Kullanici @ simgesi kullanmadan Email girer............................passed
@@ -51,7 +51,7 @@ And Kullanici Hata Aldigini dogrular........................................pass
 And Close Driver............................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Kullanici Oynatma Listesi Ekleyebilmeli" name="Kullanici_Oynatma_Listesi_Ekleyememeli" time="5.555">
+<testcase classname="Kullanici Oynatma Listesi Ekleyebilmeli" name="Kullanici_Oynatma_Listesi_Ekleyememeli" time="4.559">
 <system-out><![CDATA[
 Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
 And Kullanici Login Olur ve Login oldugunu dogrular.........................passed
@@ -63,7 +63,7 @@ Then Kullanici Hata Mesaji Alir.............................................pass
 And Close Driver............................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Kullanici Oynatma Listesi Ekleyebilmeli" name="Kullanici_Oynatma_Listesi_Ekleyememeli" time="4.279">
+<testcase classname="Kullanici Oynatma Listesi Ekleyebilmeli" name="Kullanici_Oynatma_Listesi_Ekleyememeli" time="4.57">
 <system-out><![CDATA[
 Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
 And Kullanici Login Olur ve Login oldugunu dogrular.........................passed
@@ -74,25 +74,25 @@ Then Kullanici Hata Mesaji Alir.............................................pass
 And Close Driver............................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Kullanici Oynatma Listesi Düzenleyebilmeli" name="Kullanici_Oynatma_Listesi_Düzenleyebilmeli" time="20.585">
+<testcase classname="Kullanici Oynatma Listesi Düzenleyebilmeli" name="Kullanici_Oynatma_Listesi_Düzenleyebilmeli" time="20.54">
 <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()='Kayıt Edildi!']&quot;}
   (Session info: chrome=116.0.5845.188)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3212612c4fe98530cf9877cc3a2d0934, findElement {using=xpath, value=//*[text()='Kayıt Edildi!']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Furkan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62546}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62546/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3212612c4fe98530cf9877cc3a2d0934">
+Command: [5f50bdc8fd30cfb5d3eb781d55284d0f, findElement {using=xpath, value=//*[text()='Kayıt Edildi!']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Furkan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64837}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64837/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f50bdc8fd30cfb5d3eb781d55284d0f">
 <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Kayıt Edildi!']"}
   (Session info: chrome=116.0.5845.188)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3212612c4fe98530cf9877cc3a2d0934, findElement {using=xpath, value=//*[text()='Kayıt Edildi!']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Furkan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62546}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62546/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3212612c4fe98530cf9877cc3a2d0934
+Command: [5f50bdc8fd30cfb5d3eb781d55284d0f, findElement {using=xpath, value=//*[text()='Kayıt Edildi!']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Furkan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64837}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64837/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f50bdc8fd30cfb5d3eb781d55284d0f
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -109,7 +109,7 @@ Session ID: 3212612c4fe98530cf9877cc3a2d0934
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy24.isDisplayed(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
 	at stepdefinitions.PlayListStepDefinitions.kayit_edildi_mesajini_dogrular(PlayListStepDefinitions.java:47)
 	at ✽.Kayit Edildi Mesajini Dogrular(file:///C:/Users/Furkan/IdeaProjects/OctopusTask/./src/test/resources/features/playlist/PlayListEdit.feature:9)
 ]]>
@@ -124,7 +124,7 @@ Then Kayit Edildi Mesajini Dogrular.........................................fail
 And Close Driver............................................................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Kullanici Oynatma Listesi Ekleyebilmeli" name="Kullanici_Oynatma_Listesi_Ekleyebilmeli" time="4.558">
+<testcase classname="Kullanici Oynatma Listesi Ekleyebilmeli" name="Kullanici_Oynatma_Listesi_Ekleyebilmeli" time="4.63">
 <system-out><![CDATA[
 Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
 And Kullanici Login Olur ve Login oldugunu dogrular.........................passed
@@ -138,7 +138,7 @@ Then Kayit Edildi Mesajini Dogrular.........................................pass
 And Close Driver............................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Register_Positive" name="Kullanici Kayit Olabilmelidir" time="2.797">
+<testcase classname="Register_Positive" name="Kullanici Kayit Olabilmelidir" time="2.956">
 <system-out><![CDATA[
 Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
 When Kullanici Kayit Ol butonuna tiklar.....................................passed
@@ -150,7 +150,7 @@ When Kullanici Register Kayit Ol butonuna tiklar............................pass
 Then Kullanici Kayit Oldugunu dogrular......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Register_Negative" name="Kullanici Kayit Olamamalidir" time="0.75">
+<testcase classname="Register_Negative" name="Kullanici Kayit Olamamalidir" time="0.814">
 <system-out><![CDATA[
 Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
 When Kullanici Kayit Ol butonuna tiklar.....................................passed
@@ -163,7 +163,7 @@ Then Kullanici Hata Aldigini dogrular.......................................pass
 And Close Driver............................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Register_Negative" name="Kullanici Kayit Olamamalidir" time="2.283">
+<testcase classname="Register_Negative" name="Kullanici Kayit Olamamalidir" time="2.264">
 <system-out><![CDATA[
 Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
 When Kullanici Kayit Ol butonuna tiklar.....................................passed
@@ -176,7 +176,7 @@ Then Kullanici Hata Aldigini dogrular.......................................pass
 And Close Driver............................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Register_Negative" name="Kullanici Kayit Olamamalidir" time="2.097">
+<testcase classname="Register_Negative" name="Kullanici Kayit Olamamalidir" time="4.31">
 <system-out><![CDATA[
 Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
 When Kullanici Kayit Ol butonuna tiklar.....................................passed
@@ -188,7 +188,7 @@ Then Kullanici Hata Aldigini dogrular.......................................pass
 And Close Driver............................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Register_Negative" name="Kullanici Kayit Olamamalidir" time="2.076">
+<testcase classname="Register_Negative" name="Kullanici Kayit Olamamalidir" time="3.282">
 <system-out><![CDATA[
 Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
 When Kullanici Kayit Ol butonuna tiklar.....................................passed
@@ -200,7 +200,7 @@ Then Kullanici Hata Aldigini dogrular.......................................pass
 And Close Driver............................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Kullanici Ekran Ekleyebilmeli" name="Kullanici_Ekran_Ekleyebilmeli" time="4.184">
+<testcase classname="Kullanici Ekran Ekleyebilmeli" name="Kullanici_Ekran_Ekleyebilmeli" time="14.445">
 <system-out><![CDATA[
 Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
 And Kullanici Login Olur ve Login oldugunu dogrular.........................passed
@@ -214,25 +214,25 @@ When Kayit Edildi Mesajini Dogrular.........................................pass
 And Close Driver............................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Kullanici Ekran Ekleyebilmeli" name="Kullanici_Ekran_Ekleyememeli" time="19.428">
+<testcase classname="Kullanici Ekran Ekleyebilmeli" name="Kullanici_Ekran_Ekleyememeli" time="37.119">
 <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()='Bir şeyler ters gitti.']&quot;}
   (Session info: chrome=116.0.5845.188)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dceb20f90bb3261e198570e39bdb1c56, findElement {using=xpath, value=//div[text()='Bir şeyler ters gitti.']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Furkan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62743}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62743/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dceb20f90bb3261e198570e39bdb1c56">
+Command: [ca5ce895c427c8d44b3d9da3a659b5e4, findElement {using=xpath, value=//div[text()='Bir şeyler ters gitti.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Furkan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65036}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65036/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca5ce895c427c8d44b3d9da3a659b5e4">
 <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Bir şeyler ters gitti.']"}
   (Session info: chrome=116.0.5845.188)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dceb20f90bb3261e198570e39bdb1c56, findElement {using=xpath, value=//div[text()='Bir şeyler ters gitti.']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Furkan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62743}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62743/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dceb20f90bb3261e198570e39bdb1c56
+Command: [ca5ce895c427c8d44b3d9da3a659b5e4, findElement {using=xpath, value=//div[text()='Bir şeyler ters gitti.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Furkan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65036}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65036/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca5ce895c427c8d44b3d9da3a659b5e4
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -249,7 +249,7 @@ Session ID: dceb20f90bb3261e198570e39bdb1c56
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy24.isDisplayed(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
 	at stepdefinitions.PlayListStepDefinitions.kullaniciHataMesajiAlir(PlayListStepDefinitions.java:57)
 	at ✽.Kullanici Hata Mesaji Alir(file:///C:/Users/Furkan/IdeaProjects/OctopusTask/./src/test/resources/features/screen/ScreenCreateBoundaryValue.feature:13)
 ]]>
@@ -267,25 +267,25 @@ When Kullanici Hata Mesaji Alir.............................................fail
 And Close Driver............................................................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Kullanici Ekran Ekleyebilmeli" name="Kullanici_Ekran_Ekleyememeli" time="20.135">
+<testcase classname="Kullanici Ekran Ekleyebilmeli" name="Kullanici_Ekran_Ekleyememeli" time="19.545">
 <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()='Bir şeyler ters gitti.']&quot;}
   (Session info: chrome=116.0.5845.188)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [100cc21f1d21e9f74816230c05bf6de1, findElement {using=xpath, value=//div[text()='Bir şeyler ters gitti.']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Furkan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62779}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62779/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 100cc21f1d21e9f74816230c05bf6de1">
+Command: [c4ebfca9148d2b096d475b9684ec57fa, findElement {using=xpath, value=//div[text()='Bir şeyler ters gitti.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Furkan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65069}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65069/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c4ebfca9148d2b096d475b9684ec57fa">
 <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Bir şeyler ters gitti.']"}
   (Session info: chrome=116.0.5845.188)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [100cc21f1d21e9f74816230c05bf6de1, findElement {using=xpath, value=//div[text()='Bir şeyler ters gitti.']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Furkan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62779}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62779/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 100cc21f1d21e9f74816230c05bf6de1
+Command: [c4ebfca9148d2b096d475b9684ec57fa, findElement {using=xpath, value=//div[text()='Bir şeyler ters gitti.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Furkan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65069}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65069/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c4ebfca9148d2b096d475b9684ec57fa
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -302,7 +302,7 @@ Session ID: 100cc21f1d21e9f74816230c05bf6de1
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy24.isDisplayed(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
 	at stepdefinitions.PlayListStepDefinitions.kullaniciHataMesajiAlir(PlayListStepDefinitions.java:57)
 	at ✽.Kullanici Hata Mesaji Alir(file:///C:/Users/Furkan/IdeaProjects/OctopusTask/./src/test/resources/features/screen/ScreenCreateBoundaryValue2.feature:13)
 ]]>
@@ -320,7 +320,7 @@ When Kullanici Hata Mesaji Alir.............................................fail
 And Close Driver............................................................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Kullanici Ekran Bilgisi Düzenleyebilmeli" name="Kullanici_Ekran_Bilgisi_Düzenleyebilmeli" time="5.044">
+<testcase classname="Kullanici Ekran Bilgisi Düzenleyebilmeli" name="Kullanici_Ekran_Bilgisi_Düzenleyebilmeli" time="5.396">
 <system-out><![CDATA[
 Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
 And Kullanici Login Olur ve Login oldugunu dogrular.........................passed

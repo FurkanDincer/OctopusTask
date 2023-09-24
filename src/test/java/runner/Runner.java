@@ -12,7 +12,8 @@ import org.junit.runner.RunWith;
                 "pretty",       // raporlarin console da okunakli sekilde cikmasi icin
                 "html:target/default-cucumber-reports.html",
                 "json:target/json-reports/cucumber.json", // json = javascript object notation
-                "junit:target/xml-report/cucumber.xml"
+                "junit:target/xml-report/cucumber.xml",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         monochrome = true,      // raporlarin daha okunakli olmasi icin
 
