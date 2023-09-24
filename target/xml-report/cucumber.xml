@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="119.284" tests="18" skipped="0" failures="3" errors="0">
+<testcase classname="Kullanici Icerik Yukleyebilmeli" name="Kullanici_Icerik_Yukleyebilmeli" time="9.068">
+<system-out><![CDATA[
+Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
+And Kullanici Login Olur ve Login oldugunu dogrular.........................passed
+When Kullanici Icerikler alanina tiklar.....................................passed
+When Kullanici Icerik Yukle butonuna tiklar.................................passed
+When Kullanici Masaustunden bir icerik secer................................passed
+When Kullanici Icerik Yuklendi mesajini dogrular............................passed
+And Close Driver............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Kullanici Login Olabilmelidir" name="Kullanici_Login_Olabilmelidir" time="4.176">
+<system-out><![CDATA[
+Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
+When Kullanici Kayitli Email Adresini Girer.................................passed
+When Kullanici Sifre Girer..................................................passed
+When Kullanici Login Butonuna Tiklar........................................passed
+And Kullanici Anasayfada Oldugunu Dogrular..................................passed
+And Close Driver............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Kullanici Login Olamamalidir" name="Kullanici_Login_Olamamalidir" time="3.804">
+<system-out><![CDATA[
+Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
+When Kullanici Email alanini bos birakir....................................passed
+When Kullanici Sifre Girer..................................................passed
+When Kullanici Login Butonuna Tiklar........................................passed
+And Kullanici Hata Aldigini dogrular........................................passed
+And Close Driver............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Kullanici Login Olamamalidir" name="Kullanici_Login_Olamamalidir" time="4.11">
+<system-out><![CDATA[
+Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
+When Kullanici @ simgesi kullanmadan Email girer............................passed
+When Kullanici Sifre Alanlarini Bos Birakir.................................passed
+When Kullanici Login Butonuna Tiklar........................................passed
+And Kullanici Hata Aldigini dogrular........................................passed
+And Close Driver............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Kullanici Login Olamamalidir" name="Kullanici_Login_Olamamalidir" time="4.084">
+<system-out><![CDATA[
+Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
+When Kullanici @ simgesi kullanmadan Email girer............................passed
+When Kullanici Sifre Girer..................................................passed
+When Kullanici Login Butonuna Tiklar........................................passed
+And Kullanici Hata Aldigini dogrular........................................passed
+And Close Driver............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Kullanici Oynatma Listesi Ekleyebilmeli" name="Kullanici_Oynatma_Listesi_Ekleyememeli" time="5.555">
+<system-out><![CDATA[
+Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
+And Kullanici Login Olur ve Login oldugunu dogrular.........................passed
+When Kullanici Oynatma Listeleri Butonuna Tiklar............................passed
+When Kullanici Oynatma Listesi Ekle Butonuna Tiklar.........................passed
+When Kullanici Oynatma Listesi Adi Girer....................................passed
+When Kullanici Gorsel Eklemeden Kaydet Butonuna Tiklar......................passed
+Then Kullanici Hata Mesaji Alir.............................................passed
+And Close Driver............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Kullanici Oynatma Listesi Ekleyebilmeli" name="Kullanici_Oynatma_Listesi_Ekleyememeli" time="4.279">
+<system-out><![CDATA[
+Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
+And Kullanici Login Olur ve Login oldugunu dogrular.........................passed
+When Kullanici Oynatma Listeleri Butonuna Tiklar............................passed
+When Kullanici Oynatma Listesi Ekle Butonuna Tiklar.........................passed
+When Kullanici Oynatma Listesi Adi Giremeden ve Gorsel Eklemeden Kayit Et Butonuna Tiklar.passed
+Then Kullanici Hata Mesaji Alir.............................................passed
+And Close Driver............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Kullanici Oynatma Listesi Düzenleyebilmeli" name="Kullanici_Oynatma_Listesi_Düzenleyebilmeli" time="20.585">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()='Kayıt Edildi!']&quot;}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3212612c4fe98530cf9877cc3a2d0934, findElement {using=xpath, value=//*[text()='Kayıt Edildi!']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Furkan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62546}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62546/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3212612c4fe98530cf9877cc3a2d0934">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Kayıt Edildi!']"}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3212612c4fe98530cf9877cc3a2d0934, findElement {using=xpath, value=//*[text()='Kayıt Edildi!']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Furkan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62546}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62546/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3212612c4fe98530cf9877cc3a2d0934
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.isDisplayed(Unknown Source)
+	at stepdefinitions.PlayListStepDefinitions.kayit_edildi_mesajini_dogrular(PlayListStepDefinitions.java:47)
+	at ✽.Kayit Edildi Mesajini Dogrular(file:///C:/Users/Furkan/IdeaProjects/OctopusTask/./src/test/resources/features/playlist/PlayListEdit.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
+And Kullanici Login Olur ve Login oldugunu dogrular.........................passed
+When Kullanici Oynatma Listeleri Butonuna Tiklar............................passed
+When Kullanici Oynatma Listesileri Arasindan Random Birinin Duzenle Butonuna Tiklar.passed
+And Kullanici Kayit Et Butonuna tiklar......................................passed
+Then Kayit Edildi Mesajini Dogrular.........................................failed
+And Close Driver............................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Kullanici Oynatma Listesi Ekleyebilmeli" name="Kullanici_Oynatma_Listesi_Ekleyebilmeli" time="4.558">
+<system-out><![CDATA[
+Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
+And Kullanici Login Olur ve Login oldugunu dogrular.........................passed
+When Kullanici Oynatma Listeleri Butonuna Tiklar............................passed
+When Kullanici Oynatma Listesi Ekle Butonuna Tiklar.........................passed
+When Kullanici Oynatma Listesi Adi Girer....................................passed
+When Kullanici Gorsel Ekle butonuna tiklar..................................passed
+And Kullanici Gorsel Secer ve Gorselleri Ekle Butonuna Tiklar...............passed
+And Kullanici Kayit Et Butonuna tiklar......................................passed
+Then Kayit Edildi Mesajini Dogrular.........................................passed
+And Close Driver............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Register_Positive" name="Kullanici Kayit Olabilmelidir" time="2.797">
+<system-out><![CDATA[
+Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
+When Kullanici Kayit Ol butonuna tiklar.....................................passed
+When Kullanici İsim Soyisim girer...........................................passed
+When Kullanici Email girer..................................................passed
+When Kullanici Sifre girer..................................................passed
+When Kullanici Sifre Tekrar girer...........................................passed
+When Kullanici Register Kayit Ol butonuna tiklar............................passed
+Then Kullanici Kayit Oldugunu dogrular......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Register_Negative" name="Kullanici Kayit Olamamalidir" time="0.75">
+<system-out><![CDATA[
+Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
+When Kullanici Kayit Ol butonuna tiklar.....................................passed
+When Kullanici Isim Soyisim alanini bos birakir.............................passed
+When Kullanici Email girer..................................................passed
+When Kullanici Sifre girer..................................................passed
+When Kullanici Sifre Tekrar girer...........................................passed
+When Kullanici Register Kayit Ol butonuna tiklar............................passed
+Then Kullanici Hata Aldigini dogrular.......................................passed
+And Close Driver............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Register_Negative" name="Kullanici Kayit Olamamalidir" time="2.283">
+<system-out><![CDATA[
+Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
+When Kullanici Kayit Ol butonuna tiklar.....................................passed
+When Kullanici İsim Soyisim girer...........................................passed
+When Kullanici Email alanini bos birakir....................................passed
+When Kullanici Sifre girer..................................................passed
+When Kullanici Sifre Tekrar girer...........................................passed
+When Kullanici Register Kayit Ol butonuna tiklar............................passed
+Then Kullanici Hata Aldigini dogrular.......................................passed
+And Close Driver............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Register_Negative" name="Kullanici Kayit Olamamalidir" time="2.097">
+<system-out><![CDATA[
+Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
+When Kullanici Kayit Ol butonuna tiklar.....................................passed
+When Kullanici İsim Soyisim girer...........................................passed
+When Kullanici Email girer..................................................passed
+When Kullanici Sifre Alanlarini Bos Birakir.................................passed
+When Kullanici Register Kayit Ol butonuna tiklar............................passed
+Then Kullanici Hata Aldigini dogrular.......................................passed
+And Close Driver............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Register_Negative" name="Kullanici Kayit Olamamalidir" time="2.076">
+<system-out><![CDATA[
+Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
+When Kullanici Kayit Ol butonuna tiklar.....................................passed
+When Kullanici İsim Soyisim girer...........................................passed
+When Kullanici @ simgesi kullanmadan Email girer............................passed
+When Kullanici Sifre girer..................................................passed
+When Kullanici Register Kayit Ol butonuna tiklar............................passed
+Then Kullanici Hata Aldigini dogrular.......................................passed
+And Close Driver............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Kullanici Ekran Ekleyebilmeli" name="Kullanici_Ekran_Ekleyebilmeli" time="4.184">
+<system-out><![CDATA[
+Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
+And Kullanici Login Olur ve Login oldugunu dogrular.........................passed
+When Kullanici Ekranlar Butonuna Tiklar.....................................passed
+When Kullanici Ekran Ekle Butonuna Tiklar...................................passed
+When Kullanici Ekran Adi Girer..............................................passed
+When Kullanici Yedi Haneli Ekran Kodu Girer.................................passed
+When Kullanici Oynatma Listesi Secer........................................passed
+When Kullanici Kayit Et Butonuna tiklar.....................................passed
+When Kayit Edildi Mesajini Dogrular.........................................passed
+And Close Driver............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Kullanici Ekran Ekleyebilmeli" name="Kullanici_Ekran_Ekleyememeli" time="19.428">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()='Bir şeyler ters gitti.']&quot;}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dceb20f90bb3261e198570e39bdb1c56, findElement {using=xpath, value=//div[text()='Bir şeyler ters gitti.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Furkan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62743}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62743/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dceb20f90bb3261e198570e39bdb1c56">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Bir şeyler ters gitti.']"}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dceb20f90bb3261e198570e39bdb1c56, findElement {using=xpath, value=//div[text()='Bir şeyler ters gitti.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Furkan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62743}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62743/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dceb20f90bb3261e198570e39bdb1c56
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.isDisplayed(Unknown Source)
+	at stepdefinitions.PlayListStepDefinitions.kullaniciHataMesajiAlir(PlayListStepDefinitions.java:57)
+	at ✽.Kullanici Hata Mesaji Alir(file:///C:/Users/Furkan/IdeaProjects/OctopusTask/./src/test/resources/features/screen/ScreenCreateBoundaryValue.feature:13)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
+And Kullanici Login Olur ve Login oldugunu dogrular.........................passed
+When Kullanici Ekranlar Butonuna Tiklar.....................................passed
+When Kullanici Ekran Ekle Butonuna Tiklar...................................passed
+When Kullanici Ekran Adi Girer..............................................passed
+When Kullanici Alti Haneli Ekran Kodu Girer.................................passed
+When Kullanici Oynatma Listesi Secer........................................passed
+When Kullanici Kayit Et Butonuna tiklar.....................................passed
+When Kullanici Hata Mesaji Alir.............................................failed
+And Close Driver............................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Kullanici Ekran Ekleyebilmeli" name="Kullanici_Ekran_Ekleyememeli" time="20.135">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()='Bir şeyler ters gitti.']&quot;}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [100cc21f1d21e9f74816230c05bf6de1, findElement {using=xpath, value=//div[text()='Bir şeyler ters gitti.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Furkan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62779}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62779/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 100cc21f1d21e9f74816230c05bf6de1">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Bir şeyler ters gitti.']"}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [100cc21f1d21e9f74816230c05bf6de1, findElement {using=xpath, value=//div[text()='Bir şeyler ters gitti.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Furkan\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62779}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62779/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 100cc21f1d21e9f74816230c05bf6de1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy24.isDisplayed(Unknown Source)
+	at stepdefinitions.PlayListStepDefinitions.kullaniciHataMesajiAlir(PlayListStepDefinitions.java:57)
+	at ✽.Kullanici Hata Mesaji Alir(file:///C:/Users/Furkan/IdeaProjects/OctopusTask/./src/test/resources/features/screen/ScreenCreateBoundaryValue2.feature:13)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
+And Kullanici Login Olur ve Login oldugunu dogrular.........................passed
+When Kullanici Ekranlar Butonuna Tiklar.....................................passed
+When Kullanici Ekran Ekle Butonuna Tiklar...................................passed
+When Kullanici Ekran Adi Girer..............................................passed
+When Kullanici Sekiz Haneli Ekran Kodu Girer................................passed
+When Kullanici Oynatma Listesi Secer........................................passed
+When Kullanici Kayit Et Butonuna tiklar.....................................passed
+When Kullanici Hata Mesaji Alir.............................................failed
+And Close Driver............................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Kullanici Ekran Bilgisi Düzenleyebilmeli" name="Kullanici_Ekran_Bilgisi_Düzenleyebilmeli" time="5.044">
+<system-out><![CDATA[
+Given Kullanici "https://octopus-panel-case.azurewebsites.net/login" adresine gider.passed
+And Kullanici Login Olur ve Login oldugunu dogrular.........................passed
+When Kullanici Ekranlar Butonuna Tiklar.....................................passed
+When Kullanici Ekran Listesileri Arasindan Random Birinin Duzenle Butonuna Tiklar.passed
+When Kullanici Ekran Adini Degistirir.......................................passed
+When Kullanici Kayit Et Butonuna tiklar.....................................passed
+When Kayit Edildi Mesajini Dogrular.........................................passed
+And Close Driver............................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
