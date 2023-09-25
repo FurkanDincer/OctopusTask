@@ -17,6 +17,8 @@ public class RegisterStepDefinitions {
     public String fullName=faker.name().fullName();
     public String eMail=faker.internet().emailAddress();
 
+
+//    Register Positive Steps
     @Given("Kullanici {string} adresine gider")
     public void kullanici_adresine_gider(String string) {
         Driver.getDriver().get(string);
@@ -51,6 +53,8 @@ public class RegisterStepDefinitions {
         registerPage.kayitOlButton.click();
     }
 
+
+//    Register Negative Steps
     @When("Kullanici Isim Soyisim alanini bos birakir")
     public void kullaniciIsimSoyisimAlaniniBosBirakir() {
     }

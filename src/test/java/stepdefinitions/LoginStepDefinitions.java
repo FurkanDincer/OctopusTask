@@ -25,7 +25,7 @@ public class LoginStepDefinitions {
     public void kullanici_login_butonuna_tiklar() {
 
         ReusableMethods.clickWithJS(loginPage.loginButton);
-        ReusableMethods.waitFor(2);
+        ReusableMethods.waitFor(1);
     }
     @When("Kullanici Anasayfada Oldugunu Dogrular")
     public void kullanici_anasayfada_oldugunu_dogrular() {

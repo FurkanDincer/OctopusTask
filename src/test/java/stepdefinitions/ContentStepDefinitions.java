@@ -26,9 +26,9 @@ public class ContentStepDefinitions {
         ReusableMethods.waitFor(2);
     }
 
+//    Bu alana local bilgisayardaki dosyanın yolu yazılmalıdır
     @When("Kullanici Masaustunden bir icerik secer")
     public void kullaniciMasaustundenBirIcerikSecer() {
-
         dashBoardPage.uploadButton.sendKeys("C:\\Users\\Furkan\\Desktop\\Kapadokya.jpg");
         ReusableMethods.waitFor(2);
     }

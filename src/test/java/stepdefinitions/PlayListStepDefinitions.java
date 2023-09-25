@@ -10,6 +10,7 @@ import utilities.ReusableMethods;
 public class PlayListStepDefinitions {
     DashBoardPage dashBoardPage = new DashBoardPage();
 
+//    Screen Create
     @When("Kullanici Oynatma Listeleri Butonuna Tiklar")
     public void kullanici_oynatma_listeleri_butonuna_tiklar() {
         ReusableMethods.clickWithJS(dashBoardPage.oynatmaListeleriButton);
@@ -46,6 +47,8 @@ public class PlayListStepDefinitions {
     public void kayit_edildi_mesajini_dogrular() {
         Assert.assertTrue(dashBoardPage.kayitEdildiDogrulamaMessage.isDisplayed());
     }
+
+//    ScreenCreate Negative
 
     @When("Kullanici Gorsel Eklemeden Kaydet Butonuna Tiklar")
     public void kullaniciGorselEklemedenKaydetButonunaTiklar() {
