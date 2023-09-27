@@ -30,11 +30,13 @@ public class ContentStepDefinitions {
     @When("Kullanici Masaustunden bir icerik secer")
     public void kullaniciMasaustundenBirIcerikSecer() {
         dashBoardPage.uploadButton.sendKeys("C:\\Users\\Furkan\\Desktop\\Kapadokya.jpg");
-        ReusableMethods.waitFor(2);
+        //ReusableMethods.waitFor(3);
     }
 
     @When("Kullanici Icerik Yuklendi mesajini dogrular")
     public void kullaniciIcerikYuklendiMesajiniDogrular() {
+
+       Assert.assertTrue(dashBoardPage.icerikYuklendiMessage.isDisplayed());
     }
 
     public void octopusLogin() {

@@ -1,4 +1,4 @@
-@smoke
+@smokew
 Feature: Kullanici Icerik Yukleyebilmeli
 
   Scenario: Kullanici_Icerik_Yukleyebilmeli

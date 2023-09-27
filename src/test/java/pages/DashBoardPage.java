@@ -59,6 +59,9 @@ public class DashBoardPage {
     @FindBy(xpath ="//*[text()='Kayıt Edildi!']" )
     public WebElement kayitEdildiDogrulamaMessage;
 
+    @FindBy(id ="swal2-title" )
+    public WebElement icerikYuklendiMessage;
+
     @FindBy(xpath ="(//img)[1]" )
     public WebElement gorsel;
 
